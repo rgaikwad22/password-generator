@@ -1,0 +1,83 @@
+<!doctype html>
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Password Generator</title>
+
+  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
+  <meta name="description" lang="en" content="">
+
+  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
+  <meta name="keywords" lang="en" content="">
+
+  <!-- View-port Basics: http://mzl.la/VYREaP -->
+  <!-- This meta tag is used for mobile device to display the page without any zooming,
+        so how much the device is able to fit on the screen is what's shown initially. 
+        Remove comments from this tag, when you want to apply media queries to the website. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- To adhear no-cache for Chrome -->
+  <!-- <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-store, no-cache" />
+    <meta http-equiv="Expires" content="0" /> -->
+
+  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!--font-awesome link for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
+</head>
+
+<body>
+  <!--container starts here-->
+  <div class="container">
+    <!--main starts here-->
+    <main>
+      <section class="pass-generator-section">
+        <div class="wrapper">
+          <div class="pass-generator-container">
+            <h1 class="section-heading">Password Generator</h1>
+            <form action="#FIXME">
+              <div class="input-clipboard">
+                <input type="text" class="clip-input" name="generatedPassword">
+                <span class="clipboard-icon">clipboard</span>
+              </div>
+              <div class="input-grp">
+                <label for="password-length" class="section-label">Password Length</label>
+                <input type="number" id="password-length" name="passwordLength" min="2" max="30" value="10">
+              </div>
+              <div class="input-grp">
+                <label for="uppercase-letters" class="section-label">Include uppercase letters</label>
+                <input type="checkbox" id="uppercase-letters" name="upperCase">
+              </div>
+              <div class="input-grp">
+                <label for="lowercase-letters" class="section-label">Include lowercase letters</label>
+                <input type="checkbox" id="lowercase-letters" name="lowerCase">
+              </div>
+              <div class="input-grp">
+                <label for="numbers" class="section-label">Include numbers</label>
+                <input type="checkbox" id="numbers" name="numbers">
+              </div>
+              <div class="input-grp">
+                <label for="symbols" class="section-label">Include symbols</label>
+                <input type="checkbox" id="symbols" name="symbols">
+              </div>
+              <input type="submit" class="generate-pass-btn" value="Generate Password">
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--main ends here-->
+  </div>
+  <!--container ends here-->
+  <script src="assets/vendor/jquery-1.8.3.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
